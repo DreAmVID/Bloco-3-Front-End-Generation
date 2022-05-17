@@ -1,0 +1,278 @@
+/*RESET*/
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+nav, ul {list-style: none;}
+a {text-decoration: none; cursor: pointer; opacity: 1;}
+a:hover {opacity: 0.9;}
+
+/*FONTES*/
+
+
+
+/*HEADER*/
+
+header {
+    background-color: rgb(8, 8, 8);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    border-width: 5px;
+    border-style: inset;
+    border-color: rgb(92, 75, 75)
+
+}
+
+header img {width: 250px; opacity: 0.8;}
+header nav{display: flex;}
+header li a{color:rgb(255, 255, 255); font-size: 35px; font-family: 'Creepster', cursive;}
+header li {margin: 0px 15px;}
+header li:first-child{margin-left: 0px}
+header li:last-child{margin-right: 0px}
+@media (max-width: 1100px) {
+    header {flex-direction: column;}
+    header img {margin-top: 15px; margin-bottom: 25px;}
+    header nav {margin-bottom:15px;}
+    .topnav {margin-bottom: 15px;}
+    
+}
+   
+  /* Style the "active" element to highlight the current page */
+  .topnav a.active {
+    background-color: #2196F3;
+    color: rgb(255, 255, 255);
+    
+  }
+  
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    font-family: "Special Elite";
+    border-style: double;
+    border-width: 5px;
+    border-color: rgba(0, 0, 0, 0.815);
+  }
+
+  /*HERO*/
+
+  .hero {background-image: url(../Imagens/bg.jpg); background-size: cover; min-height: 100vh; color:rgb(0, 0, 0);
+    display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;
+    font-family: 'Creepster', cursive;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+  }
+
+  .hero h1 {
+    margin-bottom: 15px;
+    font-size: 3.2rem;
+  }
+
+  .hero h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .hero .btn {background-color: rgb(255, 255, 255); border-radius: 5px; color: rgb(0, 0, 0); padding: 10px 60px; margin-top: 30px; opacity: 0.9; border: 4px solid rgb(0, 0, 0) ;
+    font-family: 'Creepster', cursive; font-size: 23px;
+  }
+  
+  .hero .btn:hover {opacity: 0.7; border: 4px solid rgb(0, 0, 0) ;}
+  @media (max-width: 1100px) {
+    .hero h1 {font-size: 2.5rem;}
+    .hero h3 {font-size: 1.5}
+  }
+
+  .descricao {
+    display:flex; flex-direction: column; align-items: center; padding: 100px 50px;
+    background-image: url(../Imagens/bg5.jpg); background-size: cover; min-height: 100vh;
+    border: 2.5px solid black;
+  }
+
+  .descricao h3 {font-size: 2rem; margin-bottom: 35px; font-family: 'Audiowide', cursive;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255)}
+  .descricao p {max-width: 800px; margin-bottom: 35px; font-family: 'Fredericka the Great', cursive;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
+  }
+  .descricao hr {width: 200px; height: 2px; margin-bottom: 35px;}
+
+  .descricao .grid {width: 100%; display: flex; flex-wrap: wrap;}
+  .descricao .grid li {height: 350px; padding: 5px; margin-bottom: 5px; background-clip: content-box; background-size: cover; background-position: center;}
+  .descricao .grid li.small {flex-basis: 40%; border-radius: 20px;}
+  .descricao .grid li.large {flex-basis: 60%; border-radius: 20px;}
+
+  .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .content-txt {
+    width: 50%;
+    
+    margin-right: 100px;
+    margin-top: 100px;
+    text-align: justify;
+    background-color:rgb(255, 255, 255) ;
+    border: 5px solid black;
+    padding: 20px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    font-family: 'Road Rage';
+    font-size: 24px;
+    color: black;
+    opacity: 0.6;
+}
+
+.container img {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 120%;
+  border-radius: 40px;
+  opacity: 0.8;
+  
+}
+
+.gatilho-jinx {
+  display: flex;
+  justify-content: center;
+  font-family: 'Creepster';
+  font-size: 60px;
+  padding-top: 80px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  opacity: 0.8;
+  
+}
+
+.bg {
+  background-image: url(../Imagens/jinx-bg3.jpg);
+  background-size: cover; min-height: 100vh;
+  padding-bottom: 60px;
+  border: 2.5px solid black;
+}
+
+.container2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-txt2 {
+  width: 50%;
+  
+  margin-left: 100px;
+  margin-top: 100px;
+  text-align: justify;
+  background-color:rgb(255, 255, 255) ;
+  border: 5px solid black;
+  padding: 20px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  font-family: 'Road Rage';
+  font-size: 24px;
+  color: black;
+  opacity: 0.6;
+}
+
+.container2 img {
+margin-top: 60px;
+margin-bottom: 40px;
+margin-right: 100px;
+width: 100%;
+border-radius: 40px;
+opacity: 0.8;
+}
+
+.policial-vi {
+display: flex;
+justify-content: center;
+font-family: 'Creepster';
+font-size: 60px;
+padding-top: 80px;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: rgb(255, 255, 255);
+opacity: 0.8;
+}
+
+.bg2 {
+background-image: url(../Imagens/vi-bg.jpg);
+background-size: cover; min-height: 50vh;
+border: 2.5px solid black;
+
+}
+
+.containerfooter {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+  padding-top: 20px;
+  opacity: 0.8;
+}
+
+.footerconfig img {
+
+  height: 90px;
+  padding: 20px;
+  margin: 0px
+  
+}
+
+.footerconfig {
+
+  
+  background-image: url(../Imagens/capa.jpg); background-size: cover; min-height: 5vh;
+  border: 2.5px solid black;
+  font-family: 'Road Rage';
+    -webkit-text-stroke-width: 0.05px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+
+}
+
+.footerconfig img:hover {opacity: 0.8;}
+
+.form {
+
+  margin-top: 20px;
+  margin-right: 50px;
+  font-family: 'Road Rage';
+  font-size: 25px;
+
+}
+
+.map {
+  margin-top: 20px;
+  margin-left: 50px;
+  border: 1px solid black;
+}
+
+.bgcontato {
+
+  background-image: url(../Imagens/vik-bg.jpg); background-size: cover; min-height: 100vh;
+}
+
+.bgcontatotext
+{
+
+  font-family: 'Road Rage';
+  font-size: 42px;
+
+}
